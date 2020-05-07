@@ -6,7 +6,7 @@ content:
   sources:
     - url: https://github.com/arfin97/java-mircoservices-docs-master.git  
       branches: master
-      start_path: docs
+      start_path: root-docs
 
     - url: https://github.com/arfin97/java-discovery-server.git
       branches: master

@@ -1,0 +1,15 @@
+= Discovery Server!
+
+== Why Do We Need This?
+
+Without this, the services’ locations would be coupled to each other, causing a hard to maintain system. The basic problem is evident: How do services know the IP and port of a service they need to consume? In a simple architecture, a static configuration works pretty well. Each service is deployed at the same location and it rarely changes. But this is not the case in microservices architectures.
+
+One of the objectives of microservices is to enable the development teams to deploy and scale their applications independently. As more services and instances are added to the system, service locations start to change frequently: partly because of manual or automatic scaling, partly because of continuous delivery processes. Instances will start to go up and down frequently as scaling and deployment happen. Clearly, a static configuration of the location of services is not a viable solution. A dynamic configuration is needed.
+
+== How Does It Work?
+
+The dynamic configuration containing the location of available services is held in a discovery service. Each microservice only needs to know about the location of the discovery service and will use it to get the location of other microservices. In the demo application, the discovery service is implemented in the discovery-server application.
+
+Let’s take two of the microservices in the demo application as an example: The admin-application (a web Vaadin application) and the biz-application (a Spring Data REST web service). The admin-application needs the biz-application for reading and writing data. The following diagram shows the communication flow:
+
+== END
