@@ -1,0 +1,17 @@
+= java-mircoservices-docs-master
+
+== root-docs
+This directory contains the root docs for Microservice documantation of BS23. It has the home page as index.adoc 
+file and master navigation as nav.adoc file. 
+
+== site-generator
+* To build site go to site-generator and run the command `antora --fetch playbook.yml`. The site will be creatd inside public folder.
+* It also has antora cheat sheet and documantation that contains important adoc and antora links.
+
+== repository-antora-doc-structure-templete
+This is starter template if you want to create an antora component in a repositor and merge it with this master repository.
+
+[NOTE]
+After you put this inside your repository, you need to configure `antora.yml` file of this `root-docs` to connect the nav. 
+And you need to put the link of the repository into `playbook.yml` file to build the site. 
+
