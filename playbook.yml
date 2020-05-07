@@ -4,7 +4,7 @@ site:
   start_page: microservices::index.adoc
 content:
   sources:
-    - url: .  
+    - url: https://github.com/arfin97/java-mircoservices-docs-master.git  
       branches: master
       start_path: docs
 
