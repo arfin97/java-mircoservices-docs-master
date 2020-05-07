@@ -1,0 +1,9 @@
+name: microservices
+title: Microservices
+version: master
+preview: true
+nav:
+- modules/ROOT/nav.adoc
+  - modules/spring-cloud-configuration-server/nav.adoc
+  - modules/spring-cloud-gateway-server/nav.adoc
+  - modules/spring-cloud-discovery-server/nav.adoc

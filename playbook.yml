@@ -1,0 +1,44 @@
+site:
+  title: Java MicroServices
+  url: https://github.com/arfin97
+  start_page: microservices::index.adoc
+content:
+  sources:
+    - url: .  
+      branches: master
+      start_path: docs
+
+    - url: https://github.com/arfin97/java-discovery-server.git
+      branches: master
+      start_path: docs
+
+    - url: https://github.com/arfin97/java-gateway-server.git
+      branches: master
+      start_path: docs
+
+    - url: https://github.com/arfin97/java-config-server.git
+      branches: master
+      start_path: docs
+
+asciidoc:
+  attributes:
+    hide-uri-scheme: ''
+    table-caption: ~
+    page-toclevels: '3'
+    tabs: tabs
+  extensions:
+    - ./lib/tabs-block.js
+ui:
+  bundle:
+    #url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    url: https://github.com/couchbase/docs-ui/releases/download/v246/ui-bundle.zip
+    snapshot: true
+  supplemental_files: ./supplemental-ui
+output:
+  dir: ./public
+  clean: true
+  destinations:
+    - provider: archive
+      path: ./public/master.zip
+    - provider: fs
+      path: ./

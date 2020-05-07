@@ -1,0 +1,53 @@
+= Welcome, Microservice Enthusiasts!
+:description: Microservice Training.  \
+Beginner | Intermediate | Advance
+:keywords: java, oop, programming, data structure, spring, spring boot
+:reftext: Welcome
+:navtitle: Welcome
+:page-layout: home
+:!sectids:
+
+This Microservice training has been designed into three segments.
+
+[.cards.cards-3.personas.conceal-title]
+== {empty}
+
+[.card]
+=== Discovery Server
+
+It’s a registry that acts like a phone-book for your microservices. Eureka itself is a rest-based service, primarily used by Netflix in their AWS Cloud for finding services, for load balancing fail over, and mainly for middle-tier services. It’s a really powerful tool for helping you kind of register these things dynamically. There’s no database behind the scenes.
+
+* xref:microservices:spring-cloud-discovery-server:spring-cloud-discovery-server.adoc[Start Learning]
+
+[.card]
+=== Gateway Server
+
+Spring Cloud Gateway is built on Spring Boot 2.x, Spring WebFlux, and Project Reactor. As a consequence, many of the familiar synchronous libraries (Spring Data and Spring Security, for example) and patterns you know may not apply when you use Spring Cloud Gateway. If you are unfamiliar with these projects, we suggest you begin by reading their documentation to familiarize yourself with some of the new concepts before working with Spring Cloud Gateway
+
+* xref:microservices:spring-cloud-gateway-server:spring-cloud-gateway-server.adoc[Start Learning]
+
+[.card]
+=== Configuration Server
+
+Spring Cloud Config is Spring's client/server approach for storing and serving distributed configurations across multiple applications and environments. This configuration store is ideally versioned under Git version control and can be modified at application runtime
+
+* xref:microservices:spring-cloud-configuration-server:spring-cloud-configuration-server.adoc[Start Learning]
+
+[.card]
+=== Monitoring Server
+
+Spring Cloud Config is Spring's client/server approach for storing and serving distributed configurations across multiple applications and environments. This configuration store is ideally versioned under Git version control and can be modified at application runtime
+
+* xref:microservices:spring-cloud-configuration-server:spring-cloud-configuration-server.adoc[Start Learning]
+
+[.tiles.browse]
+== Code Practice Methodology
+
+This training encourages practicing code through http://codekata.com/[Code Kata, window=_blank].
+
+[quote,'https://en.wikipedia.org/wiki/Kata_(programming)[Wikipedia,window=_blank]']
+
+____
+A code kata is an exercise in programming which helps programmers hone their skills through practice and repetition.
+In 1999, the term was used by Dave Thomas, co-author of the book The Pragmatic Programmer, in a bow to the Japanese concept of kata in the martial arts.
+____
