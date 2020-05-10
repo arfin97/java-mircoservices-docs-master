@@ -7,3 +7,4 @@ nav:
   - modules/spring-cloud-configuration-server/nav.adoc
   - modules/spring-cloud-gateway-server/nav.adoc
   - modules/spring-cloud-discovery-server/nav.adoc
+  - moduels/spring-cloud-hystrix/nav.adoc
