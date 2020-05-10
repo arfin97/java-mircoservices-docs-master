@@ -3,8 +3,9 @@ title: Microservices
 version: master
 preview: true
 nav:
+  - moduels/spring-cloud-hystrix/nav.adoc
   - modules/ROOT/nav.adoc
   - modules/spring-cloud-configuration-server/nav.adoc
   - modules/spring-cloud-gateway-server/nav.adoc
   - modules/spring-cloud-discovery-server/nav.adoc
-  - moduels/spring-cloud-hystrix/nav.adoc
+
