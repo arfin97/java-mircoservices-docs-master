@@ -16,13 +16,15 @@ content:
       branches: master
       start_path: docs
 
+    - url: https://github.com/arfin97/java-circuit-breaker-hystrix.git
+      branches: master
+      start_path: docs
+
     - url: https://github.com/arfin97/java-config-server.git
       branches: master
       start_path: docs
 
-    - url: https://github.com/arfin97/java-circuit-breaker-hystrix.git
-      branches: master
-      start_path: docs
+    
       
 asciidoc:
   attributes:

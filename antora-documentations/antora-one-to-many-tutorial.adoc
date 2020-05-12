@@ -1,0 +1,59 @@
+= Antora One to Many
+
+Antora one to many refers to single component in multipole repositories.
+
+Lets say you have a component microservices and you want to fetch different parts
+of this component from different repositories and put it under a single navigation,
+then you need to follow this documenation to achieve that.
+
+Here are some useful things you should know before start:
+
+. Resource ID
+. Component Direcotry Structure
+. Navigation Structure
+
+
+Structure:
+
+[NOTE]
+After the initial collection of files, there is no more concept of git repositories. Every file is put into a single catalog. So you can have a master nav.adoc file in any repository, and it can refer to files that come from any other repository. But, in fact, it wouldn't be referring to files in another repository, but rather the page ID of those files
+in the content catalog.
+
+. We will make a single component as usual. It will have a
+ROOT module
+. The ROOT module will contain a `nav.adoc` file. Which is our master
+navigation file. It is the single nav file in the whole structure.
++
+[source, adoc]
+name: microservices
+title: Microservices
+version: master
+preview: true
+nav:
+  - modules/ROOT/nav.adoc
++
+. We will create a new repo that will contain the parts of this component.
+. The new repo will have antora.yml file. inside that repo the name of
+the component will be same as the root repo.
++
+[source, java]
+name: microservices
+version: master
++
+. This repo will not have any nav file. But will have modules.
+
+[source, adoc]
+* xref:index.adoc[Welcome]
+* Core
+** xref:spring-cloud-discovery-server:spring-cloud-discovery-server.adoc[Spring Cloud Discovery Server]
+** xref:spring-cloud-gateway-server:spring-cloud-gateway-server.adoc[Spring Cloud Gateway Server]
+** xref:spring-cloud-configuration-server:spring-cloud-configuration-server.adoc[Spring Cloud Configuration Server]
+
+
+
+== Buglog
+. If you use master version, you don't need to specify it in Resource Id. But if you have
+different version like dev or v0.1. You need to specify it.
+
+== Resource
+* https://gitlab.com/antora/antora/-/issues/263[Possibility of a master nav.adoc when using multiple repositories documentations]
